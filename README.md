@@ -161,10 +161,6 @@ uvicorn main:app --reload
   <li><b>Response:</b> Success message.</li>
 </ul>
 
-## License
-
-<p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
-
 ## Author
 
-<p>Anton Anpilohov</p>
+### by [Anton Anpilohov](https://github.com/tosentai)
