@@ -140,7 +140,7 @@ class MusicManager:
         try:
             return self.session.query(AlbumModel).filter_by(id=album_id).one()
         except NoResultFound:
-            raise HTTPException(status_code=404, detail="Альбом не знайдений")
+            raise HTTPException(status_code=404, detail="Альбом нема такого")
 
     def get_all_albums_info(self) -> List[AlbumInfo]:
         albums_info_list = []
