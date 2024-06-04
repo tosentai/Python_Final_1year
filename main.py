@@ -140,7 +140,7 @@ class MusicManager:
         try:
             return self.session.query(AlbumModel).filter_by(id=album_id).one()
         except NoResultFound:
-            raise HTTPException(status_code=404, detail="Альбом не найден")
+            raise HTTPException(status_code=404, detail="Альбом не знайдений")
 
     def get_all_albums_info(self) -> List[AlbumInfo]:
         albums_info_list = []
@@ -177,7 +177,7 @@ class MusicManager:
         self.session.commit()
 
 
-app = FastAPI(title="Final project", version="1.1.0", description="<h2>by Anton Anpilohov</h2>")
+app = FastAPI(title="Final project", version="1.2.0", description="<h2>by Anton Anpilohov</h2>")
 music_manager = MusicManager()
 
 
